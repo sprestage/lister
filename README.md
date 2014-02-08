@@ -163,9 +163,7 @@ After getting all green specs, use TDD (referring to the previous specs) to deve
 # TO DO LIST
 <hr>
 
-###Implement list resource
-- Create, update, delete, show one, show many lists
-
+## <u>Get the tests running green</u>
 ###Create user resource model
 - <pre>rails generate model User username:string email:string password_digest:string</pre>
 - <pre>bundle exec rake db:migrate</pre>
@@ -175,6 +173,12 @@ After getting all green specs, use TDD (referring to the previous specs) to deve
 
 ###Create user session controller
 - Implement <b>user sign up, sign out, sign in</b> with Devise
+
+
+## <u>Implement use cases</u>
+
+###Implement list resource
+- Create, update, delete, show one, show many lists
 
 ###Implement authorship
 - This links posts to authors(users), using a one (belongs_to) to many (has_many) relationship.
