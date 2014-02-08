@@ -18,3 +18,7 @@ group :development, :test do
 # Figaro for removing secret keys from github
   gem 'figaro'
 end
+
+group :test do
+  gem 'capybara'
+end
