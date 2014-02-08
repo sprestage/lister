@@ -160,16 +160,39 @@ After getting all green specs, use TDD (referring to the previous specs) to deve
 
 <br>
 <hr>
+# THE BIG DIFFERENCES
+<hr>
+The big differences between this Lister application and my Portfolio application are:
+<ol>
+	<li>authentication of users</li>
+	<ul>
+		<li>Lister implements authentication from scratch</li>
+		<li>Portfolio uses Devise to implement authentication</li>
+	</ul>
+	<li>rails version</li>
+	<ul>
+		<li>Lister is Rails 4</li>
+		<li>Portfolio is Rails 3</li>
+	</ul>
+	<li>testing</li>
+	<ul>
+		<li>Lister uses RSpec</li>
+		<li>Portfolio uses Minitest</li>
+	</ul>
+</ol>
+
+<br>
+<hr>
 # TO DO LIST
 <hr>
 
 ## <u>Get the tests running green</u>
+###Create user resource controller
+- <pre> rails generate controller Users new --no-test-framework </pre>
+
 ###Create user resource model
 - <pre>rails generate model User username:string email:string password_digest:string</pre>
 - <pre>bundle exec rake db:migrate</pre>
-
-###Create user resource controller
-- <pre> rails generate controller Users new --no-test-framework </pre>
 
 ###Create user session controller
 - Implement <b>user sign up, sign out, sign in</b> with Devise
