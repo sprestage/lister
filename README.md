@@ -187,21 +187,20 @@ The big differences between this Lister application and my Portfolio application
 <hr>
 
 ## <u>Get the tests running green</u>
-###Create user resource controller
+###1. DONE <s>Create user resource model</s>
+
+
+###2. Create user resource controller
 - <pre> rails generate controller Users new --no-test-framework </pre>
 
-###Create user resource model
-- <pre>rails generate model User username:string email:string password_digest:string</pre>
-- <pre>bundle exec rake db:migrate</pre>
-
-###Create user session controller
+###3. Create user session controller
 - Implement <b>user sign up, sign out, sign in</b> with Devise
 
 
 ## <u>Implement use cases</u>
 
-###Implement list resource
+###1. Implement list resource
 - Create, update, delete, show one, show many lists
 
-###Implement authorship
+###2. Implement authorship
 - This links posts to authors(users), using a one (belongs_to) to many (has_many) relationship.
